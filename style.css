@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
+/* Sets a flex container for body, header, and main, aligning elements in a column and centering them horizontally */
 body,
 header,
 main {
@@ -8,6 +9,7 @@ main {
   align-items: center;
 }
 
+/* Applies the "Poppins" font, sets text color to white, gradient background, and layout settings */
 body {
   font-family: "Poppins", sans-serif;
   color: white;
@@ -16,54 +18,77 @@ body {
   height: 100vh;
   justify-content: center;
   gap: 20px;
+}
 
-  figure {
-    overflow: hidden;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+/* Hides overflow, sets dimensions for the figure, makes it circular, and adds a bottom margin */
+figure {
+  overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(2.3);
-      object-position: top 20px right -27px;
-    }
-  }
+/* Ensures the image covers the figure, scales it, and adjusts its position within the figure */
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(2.3);
+  object-position: top 20px right -27px;
+}
 
-  h1 {
-    margin: 0;
-    font-size: 24px;
-  }
+/* Removes margin and sets the font size for the main heading */
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
 
-  h2 {
-    font-size: 18px;
-    margin: 0 0 5px 0;
-    font-weight: 400;
-  }
+/* Sets the font size, adjusts the bottom margin, and specifies the font weight for the subheading */
+h2 {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+  font-weight: 400;
+}
 
-  main {
-    gap: 20px;
+/* Adds a gap between elements inside the main section */
+main {
+  gap: 20px;
+}
 
-    button {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      width: 200px;
-      height: 50px;
-      background-color: #ffffff;
-      color: #333;
-      border: none;
-      border-radius: 10px;
+/* Removes the underline from all links */
+a {
+  text-decoration: none;
+}
 
-      &:hover {
-        cursor: pointer;
-        background-color: #ffffff00;
-        border: 1px solid white;
-        color: white;
-      }
-    }
-  }
+/* Styles the button with the "Poppins" font, sets size and weight, dimensions, colors, removes the border, rounds corners, and aligns content using Flexbox */
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  display: flex; /* Ensures flex alignment */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+}
+
+/* Adds a hover effect with a pointer cursor, transparent background, white border, and white text color */
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Aligns the image vertically in the middle, sets a margin to the right, and defines its size */
+button img {
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
 }
